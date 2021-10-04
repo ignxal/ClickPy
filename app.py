@@ -1,10 +1,9 @@
-import requests
-import json
+import os
+from dotenv import load_dotenv
 from get_TodayUrl import get_TodayUrl
-from pandas import json_normalize
+from get_Timesheet import get_Timesheet
 
-my_headers = {'Authorization' : 'Token'}
+load_dotenv()
+my_headers = {'Authorization' : os.getenv('TOKEN_VAR')}
 today_url = get_TodayUrl()
-get_Timesheet = json.loads(requests.get(today_url, headers=my_headers).text)
-data = json_normalize(get_Timesheet, record_path =['data'])
-data.to_excel('Timesheet.xlsx', sheet_name='data')
+get_Timesheet(today_url, my_headers)
