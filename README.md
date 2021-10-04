@@ -4,7 +4,7 @@ Requirements
 
 # Instalation
 ```
-$ pip install pandas openpyxl
+$ pip install pandas openpyxl python-dotenv
 ```
 # Run app
 <code>$ phyton app.py</code>
