@@ -1,6 +1,6 @@
 # ClickPy
 Requirements
-* Phyton3.7+
+* Python3.7+
 * Pip
 
 # Instalation
@@ -17,5 +17,5 @@ $ pip install pandas openpyxl python-dotenv
 * Copy your URL inside get_TodayUrl() WITHOUT the endtime nums
 
 # Run app
-<code>$ phyton app.py</code>
+<code>$ python app.py</code>
 
